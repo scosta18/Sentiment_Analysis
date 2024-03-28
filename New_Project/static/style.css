@@ -1,30 +1,55 @@
-#bodys{
-    background-color: rgb(78, 75, 75);
+body {
+    background-image: url('/static/background.jpg');
+    background-size: cover; /* Adjust the background size */
+    background-position: center; /* Center the background image */
 }
 
-#form_div{
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-}
-
-.container {
-    text-align: center;
+#form_div {
     max-width: 600px;
-    width: 100%; 
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(241, 241, 241);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    background-image: url('/static/img2.jpg');
+    background-size: cover; /* Adjust the background size */
+    background-position: center; /* Center the background image */
+    background-color: rgba(255, 255, 255, 1); /* Example: 50% opacity */
+}
+
+#sentimentForm {
+    text-align: center;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#positiveSentences {
+    margin-top: 20px;
+}
+
+
+#sentimentBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#sentimentBar {
+    height: 20px;
+    background-color: lightgray;
+    width: 50%; /* Default width, representing neutral sentiment */
+}
+#statusBox{
+    display: inline-block;
+    margin: 10px;
 }
 
 #topic{
-    font-size: 45px;
+    font-size: 50px;
 }
 
-#cen{
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
-}
-
-#sentimentForm{
-    color: azure;
-}
