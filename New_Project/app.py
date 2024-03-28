@@ -52,4 +52,5 @@ def extract_positive_sentences(review_text):
     return positive_sentences
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
+
