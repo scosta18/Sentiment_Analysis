@@ -1,0 +1,30 @@
+#bodys{
+    background-color: rgb(78, 75, 75);
+}
+
+#form_div{
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%; 
+}
+
+#topic{
+    font-size: 45px;
+}
+
+#cen{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+#sentimentForm{
+    color: azure;
+}

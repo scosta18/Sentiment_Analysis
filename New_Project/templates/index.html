@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sentiment Analysis Web App</title>
-</head>
-<body>
-    <h1>Sentiment Analysis Web App</h1>
-    <form id="sentimentForm">
+    <link href="static/style.css" rel="stylesheet" />
+  </head>
+
+  <body id="bodys">
+
+    <div id="form_div">
+    
+        <form id="sentimentForm">
+        <h1 id="topic">Sentiment Analysis Web App</h1>
+
         <label for="urlInput">Enter E-commerce URL:</label>
-        <input type="text" id="urlInput" name="urlInput">
+        <input type="text" id="urlInput" name="urlInput" />
+        <hr>
         <button type="submit">Analyze Sentiment</button>
-    </form>
-    <div id="result"></div>
+        <hr>
+        <label id="cen"><b><---------Result-----------></b></label>
+        <div id="result"></div>
+        <div id="positiveSentences"></div>
+
+      </form>
+    </div>
 
     <script src="static/script.js"></script>
-</body>
+  </body>
 </html>

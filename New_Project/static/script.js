@@ -11,6 +11,18 @@ document.getElementById('sentimentForm').addEventListener('submit', function(eve
     .then(response => response.json())
     .then(data => {
         document.getElementById('result').innerText = `Sentiment: ${data.sentiment}`;
+        
+        // Display positive sentences if available
+        if (data.positive_sentences && data.positive_sentences.length > 0) {
+            const positiveSentencesDiv = document.getElementById('positiveSentences');
+            positiveSentencesDiv.innerHTML = '<p><strong>Positive Sentences:</strong></p>';
+            data.positive_sentences.forEach(sentence => {
+                positiveSentencesDiv.innerHTML += `<p>${sentence}</p>`;
+            });
+        } else {
+            const positiveSentencesDiv = document.getElementById('positiveSentences');
+            positiveSentencesDiv.innerHTML = '<p>No positive sentences found.</p>';
+        }
     })
     .catch(error => {
         console.error('Error:', error);
