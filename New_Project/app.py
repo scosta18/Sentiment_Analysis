@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from werkzeug.urls import url_quote  
+from urllib.parse import quote as url_quote
 from bs4 import BeautifulSoup
 import requests
 import re
